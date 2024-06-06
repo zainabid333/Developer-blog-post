@@ -1,9 +1,19 @@
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden
+}
+:root{
+    --bg-color: #d5d6d8;
+    --text-color: #600808;
+    --main-color: #0F1A20;    
+}
 body.dark-mode {
     background-color: #333;
     color: #fff;
 }
 
-body.dark-mode header {
+body.dark-mode  {
     background-color: #555;
 }
 
@@ -24,4 +34,203 @@ body.dark-mode textarea {
 body.dark-mode input::placeholder,
 body.dark-mode textarea::placeholder {
     color: #bbb;
+}
+
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--secon-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 2.5rem;
+    color: #600808;
+    font-weight: 800;
+    cursor: default;
+    position: relative;
+}
+
+/* logo animation using showRight property to animate the text  */
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 100%;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+.navbar a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+    text-decoration: none;
+}
+
+
+/* keeping the active session highlighted */
+
+.navbar a:hover
+{
+    color: var(--main-color);
+}
+.toggleContainer{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+/* Styling the Switch button */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  /* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(29, 128, 210);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px rgb(29, 128, 210);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  .row {
+    margin: 20px;
+    display: flex;
+  }
+  .col {
+    margin: 20px;
+  }
+
+  .btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--secon-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+}
+.btn:hover{
+    color: var(--main-color);
+    background: var(--bg-color);
+}
+
+.blogForm{
+    background: var(--bg-color);
+}
+
+.blogForm form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.blogForm form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.blogForm form .input-box input,
+.blogForm form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--secon-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+/* .blogForm form .input-box input{
+    width: 49%;
+} */
+
+.blogForm form textarea{
+    resize: none;
+}
+
+.blogForm form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+@keyframes showRight{
+    100%{
+    width: 0;
+    }
 }

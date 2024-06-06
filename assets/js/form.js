@@ -23,3 +23,10 @@ document.getElementById('blogForm').addEventListener('submit', function (event) 
 
     window.location.href = 'blog.html';
 });
+
+
+const formEL = $('#blogForm');
+formEL.on('submit', function(event){
+    event.preventDefault();
+    const username = $('username').val().trim();
+})

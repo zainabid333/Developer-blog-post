@@ -11,27 +11,44 @@
 
 <body>
     <header>
-        <h1>New Blog Post</h1>
-        <button id="toggleMode">Toggle Light/Dark Mode</button>
+        <a href="" class="logo">Zain <span>Ul Abid.</span></a>
+        <div class="toggleContainer">
+            <nav class="navbar">
+                <a href="./blog.html">Blogs</a>
+                <label class="switch col">
+                    <input type="checkbox" id="toggleMode">
+                    <span class="slider round"></span>
+                </label>
+            </nav>
+        </div>
     </header>
     <div class="container">
-        <form id="blogForm">
-            <div>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div>
-                <label for="title">Title:</label>
-                <input type="text" id="title" name="title" required>
-            </div>
-            <div>
-                <label for="content">Content:</label>
-                <textarea id="content" name="content" required></textarea>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
-        <p id="message" style="color: red;"></p>
+        <section class="blogForm">
+            <form id="blogForm">
+                <div class="input-box">
+                    <!-- <label for="username">Username:</label> -->
+                    <input type="text" id="username" name="username" required placeholder="Username">
+                </div>
+                <div class="input-box">
+                    <!-- <label for="title">Title:</label> -->
+                    <input type="text" id="title" name="title" required placeholder="Blog Title">
+                </div>
+                <div class="input-box">
+                    <!-- <label for="content">Content:</label> -->
+                    <textarea id="content" name="content" required placeholder="Blog Content"></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+
+            <!-- <p id="message" style="color: red;"></p> -->
+        </section>
     </div>
+
+    <footer>
+        <a href="https://zainabid333.github.io/zain-ul-abid-portfolio/">Developer's Portfolio</a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
     <script src="assets/js/logic.js"></script>
     <script src="assets/js/form.js"></script>
 </body>

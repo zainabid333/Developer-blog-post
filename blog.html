@@ -12,12 +12,20 @@
 <body>
     <header>
         <h1>Blog Posts</h1>
-        <button id="toggleMode">Toggle Light/Dark Mode</button>
-        <button id="backButton">Back</button>
+        <div class="toggleContainer">
+            <nav class="navbar">
+                <a href="./index.html">Home</a>
+                <label class="switch col">
+                    <input type="checkbox" id="toggleMode">
+                    <span class="slider round"></span>
+                </label>
+            </nav>
+        </div>
+
     </header>
     <main id="postsContainer"></main>
     <footer>
-        <a href="https://developer-portfolio.com">Developer's Portfolio</a>
+        <a href="https://zainabid333.github.io/zain-ul-abid-portfolio/">Developer's Portfolio</a>
     </footer>
     <script src="assets/js/logic.js"></script>
     <script src="assets/js/blog.js"></script>
