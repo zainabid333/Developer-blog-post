@@ -1,0 +1,27 @@
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode header {
+    background-color: #555;
+}
+
+body.dark-mode footer {
+    background-color: #000;
+}
+
+body.dark-mode .container {
+    background-color: #444;
+}
+
+body.dark-mode input, 
+body.dark-mode textarea {
+    background-color: #666;
+    color: #fff;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #bbb;
+}
