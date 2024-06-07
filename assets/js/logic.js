@@ -1,11 +1,6 @@
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const toggleModeButton = document.getElementById('toggleMode');
-    // const toggleModeButton = $('#toggleMode');
+
     function applyTheme(theme) {
         document.body.classList.toggle('dark-mode', theme === 'dark');
     }

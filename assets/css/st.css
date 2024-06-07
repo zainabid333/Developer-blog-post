@@ -35,29 +35,11 @@ body.dark-mode input::placeholder,
 body.dark-mode textarea::placeholder {
     color: #bbb;
 }
-
-
-
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 9%;
-    background: var(--secon-bg-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+.intro{
+  display: flex;
+  font-weight: 700;
 }
-.logo{
-    font-size: 2.5rem;
-    color: #600808;
-    font-weight: 800;
-    cursor: default;
-    position: relative;
-}
-
+  
 /* logo animation using showRight property to animate the text  */
 .logo::before{
     content: '';

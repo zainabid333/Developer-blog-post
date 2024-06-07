@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const postsContainer = document.getElementById('postsContainer');
     const blogPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
 
@@ -19,16 +19,10 @@ document.addEventListener('DOMContentLoaded', function() {
             postContent.textContent = post.content;
 
             postElement.appendChild(postTitle);
-            postElement.appendChild(postAuthor);
             postElement.appendChild(postContent);
+            postElement.appendChild(postAuthor);
 
             postsContainer.appendChild(postElement);
         });
     }
-
-    document.getElementById('backButton').addEventListener('click', function() {
-        window.location.href = 'index.html';
-    });
-
-    // No need to handle theme toggle here since it is done in logic.js
 });

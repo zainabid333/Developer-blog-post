@@ -4,10 +4,9 @@ document.getElementById('blogForm').addEventListener('submit', function (event) 
     const username = document.getElementById('username').value.trim();
     const title = document.getElementById('title').value.trim();
     const content = document.getElementById('content').value.trim();
-    const message = document.getElementById('message');
 
     if (!username || !title || !content) {
-        message.textContent = 'All fields are required!';
+        alert('All fields are required!');
         return;
     }
 
@@ -23,10 +22,3 @@ document.getElementById('blogForm').addEventListener('submit', function (event) 
 
     window.location.href = 'blog.html';
 });
-
-
-const formEL = $('#blogForm');
-formEL.on('submit', function(event){
-    event.preventDefault();
-    const username = $('username').val().trim();
-})
