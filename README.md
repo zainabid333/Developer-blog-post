@@ -6,7 +6,7 @@ Not Needed
 # Usage
 
 ## Deployed Link
-<em><a href="https://zainabid333.github.io/zain-ul-abid-portfolio/"><strong>CLick here for Zain Ul Abid Portfolio</strong></a></em>
+<em><a href="https://zainabid333.github.io/Developer-blog-post/"><strong>CLick here for Developer's BlogPost</strong></a></em>
 
 # Logics
 
