@@ -4,6 +4,10 @@ main {
     font-size: 2rem;
     /* align-items: center; */
 }
+.intro .heading{
+    margin: 20px;
+    padding: 20px;
+}
 
 .post {
     border: 1px solid #1b1919;

@@ -1,6 +1,18 @@
 form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+
+}
+.formContainer{
+    display: flex;
+    width: 50%;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+.formContainer form .input-box{
+    width: 200%;
 }
 
 form > div {

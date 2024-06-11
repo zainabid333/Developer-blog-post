@@ -1,0 +1,45 @@
+body.dark-mode .post{
+    border: 1px solid #dddcdc;
+}
+
+body.dark-mode .btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--white);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--white);
+    font-size: 1.6rem;
+    color: var(--icyblue);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: 1s;
+  }
+  body.dark-mode .btn:hover{
+    color: var(--white);
+    background: var(--black);
+  }
+  
+body.dark-mode {
+    background-color: var(--black);
+    color: #fff;
+  }
+  
+  body.dark-mode .header {
+    background-color: #090909;
+  }
+  
+  body.dark-mode footer {
+    background-color: #090909;
+  }
+  
+  body.dark-mode input,
+  body.dark-mode textarea {
+    background-color: #090909;
+    color: #fff;
+  }
+  
+  body.dark-mode input::placeholder,
+  body.dark-mode textarea::placeholder {
+    color: #bbb;
+  }
+  

@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function applyTheme(theme) {
         document.body.classList.toggle('dark-mode', theme === 'dark');
+
     }
 
     function toggleTheme() {
